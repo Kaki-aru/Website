@@ -878,30 +878,7 @@ max-width:95%;
 
 max-height:90vh;
 
-border-radius:18px;
-
-border:1px solid #333;
-
-}
-
-.lightbox-close{
-
-position:absolute;
-
-top:30px;
-
-right:40px;
-
-font-size:2rem;
-
-cursor:pointer;
-
-color:white;
-
-}
-
-```css id="2v1s0m"
-/* ===========================
+borde/* ===========================
    CONTACT
 =========================== */
 
@@ -949,7 +926,7 @@ margin-bottom:28px;
 
 display:flex;
 
-flex-wrap:wrap;
+flex-direction:column;
 
 gap:18px;
 
@@ -963,9 +940,9 @@ display:flex;
 
 align-items:center;
 
-gap:14px;
+gap:18px;
 
-padding:15px 22px;
+padding:16px 20px;
 
 background:#181818;
 
@@ -975,15 +952,15 @@ border-radius:18px;
 
 transition:.3s;
 
-font-weight:500;
+color:white;
 
 }
 
 .contact-link:hover{
 
-background:white;
+background:#222;
 
-color:black;
+border-color:#555;
 
 transform:translateY(-4px);
 
@@ -991,11 +968,11 @@ transform:translateY(-4px);
 
 .contact-icon{
 
-width:42px;
+width:52px;
 
-height:42px;
+height:52px;
 
-border-radius:14px;
+border-radius:16px;
 
 background:#202020;
 
@@ -1005,9 +982,36 @@ align-items:center;
 
 justify-content:center;
 
-font-size:1.1rem;
+flex-shrink:0;
 
 }
+
+.contact-icon img{
+
+width:26px;
+
+height:26px;
+
+}
+
+.contact-link strong{
+
+display:block;
+
+font-size:16px;
+
+margin-bottom:4px;
+
+}
+
+.contact-link span{
+
+font-size:14px;
+
+color:#9d9d9d;
+
+}
+
 
 /* ===========================
    TIMELINE
