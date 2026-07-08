@@ -860,3 +860,376 @@ border-top:1px solid #232323;
 margin-top:100px;
 
 }
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+/* Large Desktop */
+
+@media (min-width:1400px){
+
+.container{
+
+max-width:1280px;
+
+}
+
+.hero-content h1{
+
+font-size:86px;
+
+}
+
+.hero-logo img{
+
+width:390px;
+
+}
+
+}
+
+/* Laptop */
+
+@media (max-width:1100px){
+
+.hero-wrapper{
+
+gap:50px;
+
+}
+
+.hero-content h1{
+
+font-size:60px;
+
+}
+
+.portfolio-grid{
+
+gap:24px;
+
+}
+
+}
+
+/* Tablet */
+
+@media (max-width:900px){
+
+.hero-wrapper{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.hero-logo{
+
+order:-1;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.stats{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+.services-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.about-wrapper{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.skills{
+
+justify-content:center;
+
+}
+
+.portfolio-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.nav-links{
+
+display:none;
+
+}
+
+.menu-btn{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+.hero{
+
+padding-top:130px;
+
+}
+
+.hero-content h1{
+
+font-size:46px;
+
+}
+
+.hero-content h2{
+
+font-size:22px;
+
+}
+
+.hero-description{
+
+font-size:16px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.btn{
+
+width:100%;
+
+justify-content:center;
+
+text-align:center;
+
+}
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+.section-header h2{
+
+font-size:34px;
+
+}
+
+.portfolio-image{
+
+height:220px;
+
+}
+
+.contact-card{
+
+padding:26px;
+
+}
+
+.contact-link{
+
+padding:14px;
+
+}
+
+.contact-icon{
+
+width:46px;
+
+height:46px;
+
+}
+
+.contact-icon img{
+
+width:22px;
+
+height:22px;
+
+}
+
+}
+
+/* Small Phones */
+
+@media (max-width:480px){
+
+.container{
+
+width:94%;
+
+}
+
+.hero-content h1{
+
+font-size:38px;
+
+}
+
+.hero-logo img{
+
+width:220px;
+
+}
+
+.logo img{
+
+width:42px;
+
+height:42px;
+
+}
+
+.logo h2{
+
+font-size:18px;
+
+}
+
+.logo span{
+
+font-size:12px;
+
+}
+
+.section-header h2{
+
+font-size:30px;
+
+}
+
+.portfolio-content{
+
+padding:22px;
+
+}
+
+.service-card{
+
+padding:26px;
+
+}
+
+.contact-card{
+
+padding:22px;
+
+}
+
+}
+
+/* ===========================
+   SVG ICON FIX
+=========================== */
+
+.contact-icon img,
+img[src$=".svg"]{
+
+display:block;
+
+width:24px;
+
+height:24px;
+
+min-width:24px;
+
+min-height:24px;
+
+max-width:24px;
+
+max-height:24px;
+
+object-fit:contain;
+
+}
+
+/* ===========================
+   SMOOTH HOVER
+=========================== */
+
+.service-card,
+.portfolio-card,
+.contact-card,
+.contact-link,
+.btn{
+
+will-change:transform;
+
+}
+
+/* ===========================
+   SELECTION
+=========================== */
+
+::selection{
+
+background:white;
+
+color:black;
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#333;
+
+border-radius:999px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#555;
+
+}
